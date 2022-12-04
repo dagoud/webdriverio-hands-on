@@ -6,20 +6,15 @@ let client;
     client = await remote({
     capabilities: {
       browserName: 'chrome'
-    }
+    },
+    port: 9515
   })
 
   await client.navigateTo('http://todomvc.com/examples/vue/')
 
   const todoInput = await client.findElement('css selector', '.new-todo')  
-  
-  await client.elementSendKeys(todoInput['element-6066-11e4-a52e-4f735466cecf'], 'WebDriver')
-  await client.keys('Enter')
-  await client.elementSendKeys(todoInput['element-6066-11e4-a52e-4f735466cecf'], 'WebDriverIO')
-  await client.keys('Enter')
-  await client.elementSendKeys(todoInput['element-6066-11e4-a52e-4f735466cecf'], 'feed chia')
-  await client.keys('Enter')
-  
+  await client.elementSendKeys(todoInput['element-6066-11e4-a52e-4f735466cecf'], 'WebDriver\uE007WebDriverIO\uE007feed chia\uE007')
+
   const todoCheckbox = await client.findElements('css selector', 'li.todo input[type="checkbox"]')
   await client.elementClick(todoCheckbox[1]['element-6066-11e4-a52e-4f735466cecf'])
 
