@@ -5,9 +5,12 @@ let client;
 (async () => {
     client = await remote({
     capabilities: {
-      browserName: 'chrome'
+      browserName: 'chrome',
+      'goog:chromeOptions': {
+        args: ['headless', 'disable-gpu']
+      }
     },
-    port: 9515
+    // port: 9515
   })
 
   await client.navigateTo('http://todomvc.com/examples/vue/')
