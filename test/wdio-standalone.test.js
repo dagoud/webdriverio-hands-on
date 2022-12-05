@@ -5,11 +5,11 @@ let browser;
 (async () => {
     browser = await remote({
       capabilities: {
-        // browserName: 'chrome',
+        browserName: 'chrome',
       // 'goog:chromeOptions': {
         // args: ['headless', 'disable-gpu']
         // }
-        browserName: "Safari"
+        // browserName: "Safari"
       },
       // uncomment if want to connect using chromedriver - default uses puppeteer
       // port: 9515
