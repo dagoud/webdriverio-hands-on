@@ -1,0 +1,69 @@
+2022-12-06T00:06:01.661Z INFO @wdio/local-runner: Run worker command: run
+2022-12-06T00:06:01.689Z INFO webdriver: Initiate new session using the WebDriver protocol
+2022-12-06T00:06:01.730Z INFO webdriver: [POST] http://localhost:9515/session
+2022-12-06T00:06:01.730Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: {
+      browserName: 'chrome',
+      acceptInsecureCerts: true,
+      'goog:chromeOptions': [Object]
+    },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: {
+    browserName: 'chrome',
+    acceptInsecureCerts: true,
+    'goog:chromeOptions': { args: [Array] }
+  }
+}
+2022-12-06T00:06:02.426Z INFO webdriver: COMMAND navigateTo("http://todomvc.com/examples/vue/")
+2022-12-06T00:06:02.426Z INFO webdriver: [POST] http://localhost:9515/session/1463533d7baea00576200c322f1be71d/url
+2022-12-06T00:06:02.426Z INFO webdriver: DATA { url: 'http://todomvc.com/examples/vue/' }
+2022-12-06T00:06:02.894Z INFO webdriver: COMMAND findElement("css selector", ".new-todo")
+2022-12-06T00:06:02.894Z INFO webdriver: [POST] http://localhost:9515/session/1463533d7baea00576200c322f1be71d/element
+2022-12-06T00:06:02.895Z INFO webdriver: DATA { using: 'css selector', value: '.new-todo' }
+2022-12-06T00:06:02.900Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '7d9a567e-f59c-45b7-a6e2-c07f00efe4df'
+}
+2022-12-06T00:06:02.903Z INFO webdriver: COMMAND elementSendKeys("7d9a567e-f59c-45b7-a6e2-c07f00efe4df", "Bring in binsHang out washingFeed Chia")
+2022-12-06T00:06:02.903Z INFO webdriver: [POST] http://localhost:9515/session/1463533d7baea00576200c322f1be71d/element/7d9a567e-f59c-45b7-a6e2-c07f00efe4df/value
+2022-12-06T00:06:02.903Z INFO webdriver: DATA { text: 'Bring in binsHang out washingFeed Chia' }
+2022-12-06T00:06:02.976Z INFO webdriver: COMMAND findElements("css selector", "li.todo input[type="checkbox"]")
+2022-12-06T00:06:02.976Z INFO webdriver: [POST] http://localhost:9515/session/1463533d7baea00576200c322f1be71d/elements
+2022-12-06T00:06:02.976Z INFO webdriver: DATA { using: 'css selector', value: 'li.todo input[type="checkbox"]' }
+2022-12-06T00:06:02.981Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'b471cebf-5ae8-4cd1-a8ad-3c33a5995afc'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'f6abe0a6-5466-4361-9d9f-f08836206e9d'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'a8af699b-8796-4680-be5d-740d2d17e5b0'
+  }
+]
+2022-12-06T00:06:02.983Z INFO webdriver: COMMAND elementClick("f6abe0a6-5466-4361-9d9f-f08836206e9d")
+2022-12-06T00:06:02.983Z INFO webdriver: [POST] http://localhost:9515/session/1463533d7baea00576200c322f1be71d/element/f6abe0a6-5466-4361-9d9f-f08836206e9d/click
+2022-12-06T00:06:03.001Z INFO webdriver: COMMAND isElementSelected("f6abe0a6-5466-4361-9d9f-f08836206e9d")
+2022-12-06T00:06:03.001Z INFO webdriver: [GET] http://localhost:9515/session/1463533d7baea00576200c322f1be71d/element/f6abe0a6-5466-4361-9d9f-f08836206e9d/selected
+2022-12-06T00:06:03.006Z INFO webdriver: RESULT true
+2022-12-06T00:06:03.007Z INFO webdriver: COMMAND getLogTypes()
+2022-12-06T00:06:03.007Z INFO webdriver: [GET] http://localhost:9515/session/1463533d7baea00576200c322f1be71d/se/log/types
+2022-12-06T00:06:03.008Z INFO webdriver: RESULT [ 'browser', 'driver' ]
+2022-12-06T00:06:03.009Z INFO webdriver: COMMAND getLogs("driver")
+2022-12-06T00:06:03.009Z INFO webdriver: COMMAND getLogs("browser")
+2022-12-06T00:06:03.009Z INFO webdriver: [POST] http://localhost:9515/session/1463533d7baea00576200c322f1be71d/se/log
+2022-12-06T00:06:03.009Z INFO webdriver: DATA { type: 'driver' }
+2022-12-06T00:06:03.009Z INFO webdriver: [POST] http://localhost:9515/session/1463533d7baea00576200c322f1be71d/se/log
+2022-12-06T00:06:03.009Z INFO webdriver: DATA { type: 'browser' }
+2022-12-06T00:06:03.012Z INFO webdriver: RESULT []
+2022-12-06T00:06:03.012Z INFO webdriver: RESULT [
+  {
+    level: 'SEVERE',
+    message: 'https://todomvc.com/favicon.ico - Failed to load resource: the server responded with a status of 404 ()',
+    source: 'network',
+    timestamp: 1670285162942
+  }
+]
+2022-12-06T00:06:03.013Z INFO webdriver: COMMAND deleteSession()
+2022-12-06T00:06:03.013Z INFO webdriver: [DELETE] http://localhost:9515/session/1463533d7baea00576200c322f1be71d

@@ -1,0 +1,9 @@
+2022-12-06T00:06:01.278Z INFO @wdio/cli:launcher: Run onPrepare hook
+2022-12-06T00:06:01.287Z INFO chromedriver: Initiate Chromedriver Launcher (v8.0.1)
+2022-12-06T00:06:01.287Z INFO chromedriver: Start Chromedriver (/Users/dagoudie/Repos/wdio/webdriverio-hands-on/node_modules/chromedriver/lib/chromedriver/chromedriver) with args --port=9515 --url-base=/
+2022-12-06T00:06:01.397Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2022-12-06T00:06:01.397Z INFO @wdio/local-runner: Start worker 0-0 with arg: 
+2022-12-06T00:06:03.173Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2022-12-06T00:06:03.174Z INFO @wdio/cli:launcher: Run onComplete hook
+2022-12-06T00:06:03.196Z INFO @wdio/local-runner: Shutting down spawned worker
+2022-12-06T00:06:03.448Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
